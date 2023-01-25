@@ -4,8 +4,10 @@
 @import "fonts";
 @import "settings";
 
-// подключения компонентов страницы
+// подключения компонентов страницы (Большие)
 @import "./components/header";
-@import "./components/nav";
 @import "./components/hero";
 @import "./components/about-section";
+// подключения компонентов страницы (Малые)
+@import "./components/nav";
+@import "./components/video-block";
