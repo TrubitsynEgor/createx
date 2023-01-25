@@ -1,11 +1,13 @@
 .mission {
   background-color: var(--light-color);
 
+
   &__box {
     --mission-gap: 94px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: calc((var(--mission-gap))*2);
+    margin-bottom: -6px;
 
     @include tablet {
       grid-template-columns: 1fr;
@@ -28,6 +30,11 @@
       height: 188px;
       opacity: .3;
     }
+  }
+
+  &__subtitle {
+    margin: 22px 0 10px;
+
   }
 
   &__col-descr {
