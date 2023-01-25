@@ -37,7 +37,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -105,4 +106,87 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.section-offset {
+  padding-top: 120px;
+}
+
+.main-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: var(--ebony-color);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+
+  span {
+    color: var(--primary-color);
+  }
+
+  &--home {
+    color: var(--light-color);
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--ebony-color);
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.descr {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--storm-color);
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.main-descr {
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--grey-color);
+
+  &--home {
+    color: var(--light-color);
+    margin-bottom: 62px;
+  }
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 14px 38px;
+  color: var(--light-color);
+
+  &--fill {
+    background-color: var(--primary-color);
+  }
+
+  &--stroke {
+    border: 1px solid;
+
+    &-light {
+      border-color: var(--light-color);
+    }
+  }
+
 }
