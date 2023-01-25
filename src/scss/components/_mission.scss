@@ -1,0 +1,40 @@
+.mission {
+  background-color: var(--light-color);
+
+  &__box {
+    --mission-gap: 94px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc((var(--mission-gap))*2);
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  &__col {
+    @include flex-all-center;
+    flex-direction: column;
+    position: relative;
+
+    &:not(:last-child):after {
+      content: '';
+      position: absolute;
+      right: calc(-1 * var(--mission-gap));
+      top: 0;
+      background-color: var(--storm-color);
+      width: 1px;
+      height: 188px;
+      opacity: .3;
+    }
+  }
+
+  &__col-descr {
+
+    @include tablet {
+      max-width: 285px;
+    }
+  }
+
+}

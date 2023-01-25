@@ -144,15 +144,41 @@ a {
   }
 }
 
+.subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--ebony-color);
+  margin: 22px 0 10px;
+
+  &--big {
+    font-size: 28px;
+  }
+
+  &--center {
+    text-align: center;
+
+  }
+}
+
+
 .descr {
   margin: 0;
   margin-bottom: 60px;
-  font-size: 18px;
   line-height: 150%;
   color: var(--storm-color);
 
   &--center {
     text-align: center;
+  }
+
+  &--small {
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &--big {
+    font-size: 18px;
   }
 }
 
@@ -189,4 +215,10 @@ a {
     }
   }
 
+}
+
+.main-svg {
+  width: 48px;
+  height: 48px;
+  fill: var(--primary-color);
 }
