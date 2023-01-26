@@ -50,9 +50,11 @@
     position: absolute;
     left: 2.8%;
     bottom: 6%;
+    z-index: 10;
     width: 40px;
     height: 40px;
     border-radius: 100%;
+    cursor: pointer;
 
     & svg {
       height: 14px;
