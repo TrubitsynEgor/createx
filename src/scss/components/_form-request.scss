@@ -34,7 +34,7 @@
   }
 
   &__label {
-    padding-top: 19px;
+    padding-top: 20px;
   }
 
   &__label-caption {}
@@ -55,11 +55,14 @@
     color: #9a9ca5;
   }
 
-  &__label--big {}
+  &__label--big {
+    padding-top: 17px;
+
+  }
 
   &__input--big {
     min-height: 66px;
-    padding-top: 10px;
+    padding-top: 12px;
     resize: none;
   }
 
