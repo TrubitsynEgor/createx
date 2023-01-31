@@ -1,10 +1,21 @@
 .facts {
-  height: 100vh;
-  background: url('../img/facts_bg.png');
-  background-position: left;
-  background-repeat: no-repeat;
   padding-top: 180px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--light-color);
 
+  &::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: -195px;
+    width: 570px;
+    height: 1065px;
+    background: url('../img/facts_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   &__title {
     padding-bottom: 90px;
