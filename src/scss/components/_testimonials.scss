@@ -6,7 +6,9 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    transform: translateY(60px);
+    position: relative;
+    top: 60px;
+    z-index: 5;
   }
 
   &__content {
