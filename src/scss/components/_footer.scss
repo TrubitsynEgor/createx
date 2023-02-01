@@ -2,21 +2,35 @@
   background-color: var(--ebony-color);
   padding: 80px 0;
 
+  @include tablet {
+    padding: 30px 0;
+  }
+
   &__top {
     padding-bottom: 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 242px
+    gap: 242px;
+
+    @include tablet {
+      gap: 40px;
+      padding-bottom: 28px;
+    }
   }
 
   &__top-social {
     display: flex;
     flex-direction: column;
     padding-bottom: 49px;
+
   }
 
   &__social-logo {
     padding-right: 44px;
+
+    @include tablet {
+      padding-right: 24px;
+    }
   }
 
   &__social-box {
@@ -27,9 +41,9 @@
   }
 
   &__social-icon {
+    object-fit: cover;
     width: 24px;
     height: 24px;
-
   }
 
   &__top-descr {
@@ -63,6 +77,10 @@
     gap: 126px;
     padding-bottom: 58px;
 
+    @include tablet {
+      gap: 40px;
+      padding-bottom: 28px;
+    }
   }
 
   &__list {}
@@ -165,6 +183,9 @@
     padding-left: 16px;
     color: var(--light-color);
 
+    @include tablet {
+      width: 340px;
+    }
 
 
     &::placeholder {
@@ -197,4 +218,8 @@
 .footer-nav {
   display: flex;
   gap: 126px;
+
+  @include tablet {
+    gap: 40px;
+  }
 }

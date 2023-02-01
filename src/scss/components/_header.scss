@@ -5,6 +5,15 @@
     background-color: var(--light-color);
   }
 
+  &--services {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+  }
+
+
   &__container {
     @include flex-v-center;
     @include flex-all-sb;
@@ -14,15 +23,6 @@
     margin-left: -112px;
   }
 }
-
-.header--main {}
-
-.container {}
-
-.logo {}
-
-.list-reset {}
-
 
 .header-contacts {
   @include flex-v-center;

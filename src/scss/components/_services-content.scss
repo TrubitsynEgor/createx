@@ -1,0 +1,59 @@
+.services-content {
+  padding-bottom: 180px;
+  position: relative;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+  }
+
+  &__bg--top {
+    right: -9px;
+    top: 530px;
+  }
+
+  &__bg--bot {
+    bottom: -246px;
+    left: -8px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+
+    &:not(:last-child) {
+      padding-bottom: 120px;
+
+    }
+  }
+
+
+  &__content {
+    padding-top: 20px 25px;
+
+
+  }
+
+  &__content-title {
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  &__content-descr {
+    margin: 0;
+    font-size: 16px;
+    padding-bottom: 48px;
+    width: 575px;
+    letter-spacing: 0;
+  }
+
+  &__content-btn {
+    padding: 12px 31px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+  }
+}

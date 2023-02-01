@@ -1,0 +1,58 @@
+.hero-services {
+  background-color: var(--athens-color);
+  background: url('../img/page-services/hero-services_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 153px;
+  padding-bottom: 159px;
+
+
+
+  &__box {
+    max-width: 600px;
+  }
+
+  &__title {
+    color: var(--ebony-color);
+    padding-top: 40px;
+    letter-spacing: 1px;
+  }
+
+  &__descr {
+    color: var(--storm-color);
+
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 22px;
+
+      &::after {
+        content: '/';
+        position: absolute;
+        right: -15px;
+        top: 0;
+        color: #9A9CA5;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--grey-color);
+
+    &:not([href]) {
+      color: #9A9CA5;
+    }
+  }
+}
