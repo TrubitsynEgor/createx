@@ -1,0 +1,90 @@
+.offer {
+  padding: 120px 0 180px;
+  background-color: var(--light-color);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+
+
+  }
+
+  &__img {
+    display: block;
+    grid-column: 7 span;
+  }
+
+  &__content {
+    grid-column: 5 span;
+    padding-left: 75px;
+  }
+
+
+
+  &__accardion-title {
+    font-family: 'Muller';
+    margin: 0;
+    font-weight: 900;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-bottom: 55px;
+
+  }
+
+  &__accardion {
+    padding-left: 44px;
+  }
+
+  &__accardion-btn {
+    position: relative;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: -44px;
+      top: 25.5%;
+      width: 22px;
+      height: 2px;
+      background-color: var(--primary-color);
+
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -43px;
+      top: 25.5%;
+      width: 22px;
+      height: 2px;
+      transform: rotate(90deg);
+      background-color: var(--primary-color);
+      transition: all 0.5s ease-in-out 0s;
+
+    }
+  }
+
+  &__accardion-content {
+    margin: 0;
+    padding: 0;
+
+
+  }
+}
+
+.offer__accardion.is-open .offer__accardion-content {
+  padding: 0;
+  padding-top: 14px;
+}
+
+.offer__accardion.is-open .offer__accardion-btn::before {
+  opacity: 0;
+}
+
+.accordion-1 {
+  padding-bottom: 24px;
+}
