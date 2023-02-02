@@ -1,0 +1,126 @@
+.pricing {
+  padding-top: 80px;
+  background-color: var(--athens-color);
+  position: relative;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    left: 98px;
+    top: 0;
+  }
+
+  &__table {}
+}
+
+.table-wrapper {
+  overflow: hidden;
+  margin-bottom: 32px;
+  background: var(--light-color);
+  width: 100%;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  position: relative;
+  z-index: 5;
+
+  @include tablet {
+    overflow-x: visible;
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  min-height: 743px;
+
+  &__thead {}
+
+  &__row {}
+
+  &__th {
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--ebony-color);
+
+    & span {
+      text-transform: none;
+      padding-top: 2px;
+      display: block;
+      font-size: 18px;
+      text-align: center;
+      line-height: 150%;
+      color: var(--storm-color);
+    }
+  }
+
+  &__th:first-child {
+    text-transform: none;
+    padding-left: 24px;
+    padding-right: 289px;
+    padding-top: 68px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  &__check {
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+      background: url('../img/page-services/table-mark.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  }
+
+  &__col {
+    text-align: center;
+    padding: 16px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--grey-color);
+  }
+
+
+  &__col:first-child {
+    text-align: left;
+    padding-left: 24px;
+  }
+
+  &__col-btn {
+    font-size: 12px;
+    padding: 8px 22px;
+
+  }
+
+  &__tbody {
+    .table__row {
+      &:nth-child(odd) {
+        background-color: var(--athens-color);
+      }
+
+      &:last-child {
+        .table__col {
+          padding-bottom: 30px;
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+}

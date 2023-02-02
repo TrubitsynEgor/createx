@@ -56,17 +56,12 @@ class Accordion {
   }
 }
 
+if (document.querySelector('.offer')) {
+  const accordion1 = new Accordion('.accordion-1', {
+    speed: 500,
+  });
 
-const accordion1 = new Accordion('.accordion-1', {
-  speed: 500,
-  isOpen: (acc) => {
-    console.log(acc);
-  },
-  isClose: (acc) => {
-    console.log(acc);
-  }
-});
-
-const accordion2 = new Accordion('.accordion-2', {
-  speed: 500
-});
+  const accordion2 = new Accordion('.accordion-2', {
+    speed: 500
+  });
+}
