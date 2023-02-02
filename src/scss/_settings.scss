@@ -151,6 +151,10 @@ a {
   &--center {
     text-align: center;
   }
+
+  &--light {
+    color: var(--light-color);
+  }
 }
 
 .subtitle {
@@ -165,7 +169,10 @@ a {
 
   &--center {
     text-align: center;
+  }
 
+  &--light {
+    color: var(--light-color);
   }
 
   &--large {
@@ -179,6 +186,11 @@ a {
   margin-bottom: 60px;
   line-height: 150%;
   color: var(--storm-color);
+
+  &--light {
+    color: var(--light-color);
+    opacity: .6;
+  }
 
   &--center {
     text-align: center;

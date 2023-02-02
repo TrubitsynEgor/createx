@@ -1,6 +1,12 @@
 .mission {
   background-color: var(--light-color);
 
+  &--dark {
+    padding-top: 81px;
+    padding-bottom: 20px;
+
+    background-color: var(--ebony-color);
+  }
 
   &__box {
     --mission-gap: 94px;
@@ -44,4 +50,11 @@
     }
   }
 
+  &__btn {
+    position: relative;
+    left: 50%;
+    top: 46px;
+    transform: translateX(-50%);
+    padding: 16px 112px;
+  }
 }
