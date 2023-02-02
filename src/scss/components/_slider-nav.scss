@@ -18,16 +18,12 @@
     transition: all 0.3s ease-in-out 0s;
     color: var(--grey-color);
 
-
-
-
     & svg {
       width: 18px;
       height: 11px;
       display: block;
       object-fit: cover;
       fill: currentColor;
-
     }
 
     &:hover {

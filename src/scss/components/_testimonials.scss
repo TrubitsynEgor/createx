@@ -21,7 +21,6 @@
     margin-bottom: 60px;
   }
 
-  &__slider {}
 
   &__slider-img {
     overflow: hidden;
@@ -37,7 +36,6 @@
     }
   }
 
-  &__img {}
 
   &__descr {
     margin: 25px 0 25px;
@@ -62,17 +60,13 @@
     line-height: 160%;
     color: var(--ebony-color);
 
-
-
     & span {
-
       display: block;
       font-weight: 400;
       font-size: 14px;
       line-height: 150%;
       color: var(--storm-color);
       padding-top: 4px;
-
 
     }
   }

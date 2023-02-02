@@ -9,20 +9,13 @@
 
   &__title {
     padding-bottom: 34px;
-
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 105px;
-
-
   }
-
-  &__item {}
-
-  &__link {}
 
   &__img {
     width: 120px;

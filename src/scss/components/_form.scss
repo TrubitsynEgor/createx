@@ -1,7 +1,6 @@
 .mission {
   &__form {
     padding: 0px 60px 48px;
-
   }
 }
 
@@ -22,9 +21,6 @@
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
-
-
-
 
   }
 
@@ -49,7 +45,6 @@
     @include tablet {
       margin-top: 7px;
     }
-
   }
 
   &__input {
@@ -70,9 +65,7 @@
       line-height: 150%;
       color: #9aaca5;
     }
-
   }
-
 
   &__btn {
     padding: 0px 32px;
