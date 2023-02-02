@@ -2,6 +2,10 @@
   background-color: var(--light-color);
   padding-bottom: 120px;
 
+  &--inner {
+    padding-top: 180px;
+  }
+
   &__top {
     display: flex;
     align-items: flex-end;
