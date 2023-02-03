@@ -10,7 +10,25 @@
 
   &__item {
     grid-column: 4 span;
+    display: none;
+
+
   }
+
+
+
+  &__item.active {
+    display: flex;
+
+    &:nth-child(n+10) {
+      display: none;
+    }
+  }
+
+  &__item.active-more {
+    display: flex !important;
+  }
+
 
 
 }
