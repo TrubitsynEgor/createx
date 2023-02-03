@@ -1,0 +1,44 @@
+.work-content {
+  padding-top: 121px;
+  padding-bottom: 100px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    grid-column: 4 span;
+  }
+}
+
+.load-more {
+  display: block;
+  padding-top: 68px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--grey-color);
+
+  & span {
+    position: relative;
+    padding-right: 36px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background: url('../img/page-work/convert.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  }
+}
