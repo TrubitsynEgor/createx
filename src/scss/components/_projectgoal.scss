@@ -1,0 +1,56 @@
+.projectgoal {
+  padding-bottom: 120px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 600px 495px;
+    gap: 135px
+  }
+
+  &__item {
+    &:last-child {}
+  }
+
+  &__title {
+    padding-bottom: 15px;
+  }
+
+  &__descr p {
+    &:first-child {
+      padding-bottom: 9px;
+    }
+  }
+
+  &__list {
+    padding: 0px 59px;
+    padding-bottom: 26px;
+
+    background-color: var(--light-color);
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+
+  }
+
+
+
+  &__list-item {
+    color: #787A80;
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+  }
+
+  &__list-category {
+    width: 130px;
+    padding-right: 32px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 160%;
+    color: var(--ebony-color);
+
+  }
+
+  &__list-value {}
+}
