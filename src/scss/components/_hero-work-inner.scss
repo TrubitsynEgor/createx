@@ -1,0 +1,77 @@
+.hero-work--inner {
+  background-color: var(--light-color);
+  background: url('../img/page-work/work-inner-hero_bg.png');
+  background-position: right -8px top 48px;
+  background-repeat: no-repeat;
+
+
+  padding-top: 153px;
+  padding-bottom: 153px;
+
+  &__title {
+    margin: 0;
+
+    padding-top: 39px;
+    padding-bottom: 60px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    color: var(--ebony-color);
+  }
+}
+
+.work-images {
+  position: relative;
+
+  &__nav {}
+
+
+}
+
+.work-slider {
+  overflow: hidden;
+  padding-bottom: 18px;
+  position: relative;
+
+
+  &__next {
+    background-color: rgba(#fff, .5);
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    right: 32px;
+    z-index: 10;
+
+  }
+
+  &__prev {
+    background-color: rgba(#fff, .5);
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    left: 32px;
+    z-index: 10;
+  }
+
+
+  .swiper-slide img {
+    border-radius: 4px;
+  }
+
+
+}
+
+.work-slider-2 {
+  .swiper-slide img {
+    opacity: .6;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+
+  }
+
+  .swiper-slide-thumb-active img {
+    opacity: 1;
+
+  }
+}

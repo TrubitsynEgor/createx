@@ -19,10 +19,6 @@
 
   &__item.active {
     display: flex;
-
-    &:nth-child(n+10) {
-      display: none;
-    }
   }
 
   &__item.active-more {

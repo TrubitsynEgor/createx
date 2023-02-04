@@ -1,5 +1,7 @@
 // Подключение свайпера
-import Swiper, { Navigation, Pagination } from 'swiper';
+// import Swiper, { Navigation, Pagination } from 'swiper';
+import { Swiper, Autoplay, EffectFade, Navigation, Pagination, Thumbs } from 'swiper';
+Swiper.use([EffectFade, Navigation, Pagination, Thumbs]);
 
 
 
@@ -26,5 +28,34 @@ const testimonialsSlider = new Swiper('.testimonials__slider', {
     prevEl: '.testimonials-section__prev',
   }
 });
+
+const sliderWorkElement = document.querySelector('.work-slider');
+
+if (sliderWorkElement) {
+  const workSliderNav = new Swiper('.work-slider-2', {
+    spaceBetween: 0,
+    slidesPerView: 10.25,
+    freeMode: true,
+    watchSlidesProgress: true,
+    allowTouchMove: false,
+
+  });
+  const workSlider = new Swiper(sliderWorkElement, {
+    spaceBetween: 10,
+    slidesPerView: 1,
+
+    navigation: {
+      nextEl: ".work-slider__next",
+      prevEl: ".work-slider__prev",
+    },
+    thumbs: {
+      swiper: workSliderNav,
+    },
+
+  });
+
+}
+
+
 
 
