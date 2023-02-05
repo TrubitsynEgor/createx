@@ -1,0 +1,25 @@
+.map {
+  background-color: var(--athens-color);
+
+  &__container {
+    background: url('../img/page-about/map.svg');
+    background-position: bottom 110px left 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 883px;
+
+  }
+
+  &__title {
+    padding-top: 81px;
+
+    margin: 0;
+
+  }
+}
+
+.container {}
+
+.title {}
+
+.title--center {}
