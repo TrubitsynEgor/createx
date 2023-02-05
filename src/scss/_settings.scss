@@ -224,6 +224,11 @@ address {
     color: var(--light-color);
     margin-bottom: 62px;
   }
+
+  &--bold {
+    color: var(--ebony-color);
+    font-weight: 700;
+  }
 }
 
 .btn {
