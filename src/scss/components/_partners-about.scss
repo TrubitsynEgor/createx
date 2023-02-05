@@ -1,0 +1,10 @@
+.partners-about {
+  background-color: var(--light-color);
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  &__list:last-child {
+    padding-top: 35px;
+
+  }
+}
