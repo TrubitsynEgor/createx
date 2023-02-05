@@ -1,12 +1,15 @@
 .mission {
   background-color: var(--light-color);
 
+
+
   &--dark {
     padding-top: 81px;
     padding-bottom: 20px;
-
     background-color: var(--ebony-color);
   }
+
+
 
   &__box {
     --mission-gap: 94px;
