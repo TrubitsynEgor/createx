@@ -58,4 +58,33 @@ if (sliderWorkElement) {
 
 
 
+const sliderHistoryEl = document.querySelector('.history__slider-body');
+
+if (sliderHistoryEl) {
+  const historySliderNav = new Swiper('.history__slider-nav', {
+    spaceBetween: 0,
+    slidesPerView: 9,
+    freeMode: true,
+    watchSlidesProgress: true,
+    allowTouchMove: false,
+
+  });
+  const historySliderBody = new Swiper(sliderHistoryEl, {
+    spaceBetween: 10,
+    slidesPerView: 1,
+
+    navigation: {
+      nextEl: ".history__next",
+      prevEl: ".history__prev",
+    },
+    thumbs: {
+      swiper: historySliderNav,
+    },
+
+  });
+
+}
+
+
+
 
