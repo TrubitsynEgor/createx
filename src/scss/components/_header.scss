@@ -5,12 +5,13 @@
     background-color: var(--light-color);
   }
 
-  &--services {
+  &--services,
+  &--about,
+  &--work {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-
   }
 
 

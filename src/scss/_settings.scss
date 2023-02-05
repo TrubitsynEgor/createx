@@ -159,6 +159,11 @@ address {
   &--light {
     color: var(--light-color);
   }
+
+  &--primary {
+    color: var(--primary-color);
+  }
+
 }
 
 .subtitle {
