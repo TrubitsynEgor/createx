@@ -1,5 +1,4 @@
 .graph-modal {
-
   &__container {
     width: 486px;
     height: 412px;
@@ -10,8 +9,6 @@
     }
   }
 
-  &__close {}
-
   &__content {
     padding-top: 5px;
   }
@@ -20,21 +17,9 @@
     margin: 0;
     padding-top: 5px;
     padding-bottom: 23px;
-
-
-
   }
 }
 
-.btn-reset {}
-
-.js-modal-close {}
-
-.subtitle {}
-
-.subtitle--big {}
-
-.subtitle--center {}
 
 .modal-form {
   display: flex;
@@ -75,14 +60,11 @@
       resize: none;
     }
 
-
     &::placeholder {
       font-size: 14px;
       line-height: 150%;
       color: var(--manatee-color);
     }
-
-
   }
 
   &__btn {
