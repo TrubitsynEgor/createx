@@ -7,4 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &--inner {
+    padding-bottom: 126px;
+    background: url('../img/page-positions/hero-positions_bg.png');
+    background-position: center left -8px;
+
+  }
 }
