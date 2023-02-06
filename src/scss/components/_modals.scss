@@ -44,6 +44,28 @@
     line-height: 150%;
     color: var(--grey-color);
     padding-bottom: 8px;
+
+    &--start {
+      margin-right: 267px;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        background: url('../img/page-positions/attach.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+
+    }
   }
 
   &__input {
@@ -58,6 +80,7 @@
     &--big {
       height: 86px;
       resize: none;
+
     }
 
     &::placeholder {
@@ -70,7 +93,7 @@
   &__btn {
     width: 390px;
     font-size: 14px;
-    margin-top: 22px;
+    margin-top: 8px;
     padding-bottom: 10px;
   }
 }

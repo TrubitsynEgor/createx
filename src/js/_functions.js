@@ -37,6 +37,13 @@ const modal = new GraphModal();
 // import GraphTabs from 'graph-tabs';
 // const tabs = new GraphTabs('tab');
 
+//custom select choices.js:
+import Choices from 'choices.js';
+const element = document.querySelector('.custom-select');
+const choices = new Choices(element, {
+  searchEnabled: false,
+});
+
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
 
