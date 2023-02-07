@@ -70,3 +70,34 @@ if (tabsNav) {
     }
   })
 }
+
+
+const categoriesTabs = document.querySelector('.categories-tabs');
+
+if (categoriesTabs) {
+  const tabsBody = document.querySelectorAll('.tabs-body__item');
+  const tabsBtn = document.querySelectorAll('.tabs-nav__btn');
+
+  categoriesTabs.addEventListener('click', el => {
+    const target = el.target;
+    if (target.classList.contains('tabs-nav__btn')) {
+      const path = target.dataset.path;
+
+      tabsBody.forEach(el => {
+        el.classList.remove('active');
+      });
+      document.querySelectorAll(`[data-target="${path}"]`).forEach(el => el.classList.add('active'));
+
+
+      tabsBtn.forEach(el => el.classList.remove('active'));
+      target.classList.add('active')
+      if (path == 'all') {
+        tabsBody.forEach(el => el.classList.add('active'));
+
+      }
+    }
+  })
+}
+
+
+
