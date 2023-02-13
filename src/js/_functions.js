@@ -40,11 +40,13 @@ const modal = new GraphModal();
 //custom select choices.js:
 
 import Choices from 'choices.js';
-const element = document.querySelector('.custom-select');
+const element = document.querySelectorAll('.custom-select');
 if (element) {
-  const choices = new Choices(element, {
-    searchEnabled: false,
-  });
+  element.forEach(el => {
+    const choices = new Choices(el, {
+      searchEnabled: false,
+    });
+  })
 }
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';

@@ -1,0 +1,164 @@
+.contacts-form {
+  padding-top: 123px;
+  padding-bottom: 120px;
+
+  &__title {}
+
+  &__descr {}
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  &__img {
+    width: 495px;
+    height: 586px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__form {
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  &__label {
+    width: 285px;
+
+
+    &--big {
+      padding-top: 8px;
+    }
+
+
+  }
+
+  &__caption {
+    display: block;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--grey-color);
+    margin-bottom: 8px;
+
+
+    &--radio {
+      padding-top: 4px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__input {
+    padding-left: 15px;
+    width: 285px;
+    height: 52px;
+    background: #F4F5F7;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+
+
+  }
+
+  &__radio {
+    position: relative;
+  }
+
+  &__radio-caption {
+    display: block;
+    padding-left: 25px;
+  }
+
+  &__radio-box {
+    display: flex;
+
+  }
+
+  &__radio-item {
+    display: flex;
+    padding-left: 2px;
+    padding-right: 25px;
+
+  }
+
+  &__radio-caption {
+    font-size: 16px;
+    color: var(--grey-color);
+    cursor: pointer;
+  }
+
+  &__radio::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid var(--storm-color);
+    cursor: pointer;
+  }
+
+  &__radio:checked::before {
+    border: 1px solid var(--primary-color);
+  }
+
+  &__radio:checked:after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+  }
+
+  &__input--big {
+    width: 600px;
+    height: 128px;
+    padding-top: 15px;
+  }
+
+  &__btn {
+    width: 210px;
+    height: 52px;
+    margin-top: 17px;
+    margin-left: 73px;
+
+  }
+
+  & .custom-checkbox {
+    width: 287px;
+  }
+
+  & .custom-checkbox__content {
+    font-size: 16px;
+    line-height: 160%;
+
+    &::after {
+      top: -3px;
+    }
+  }
+
+  & .choices__inner {
+    padding-left: 15px;
+    width: 285px;
+    height: 52px;
+    border-radius: 4px;
+    background: var(--athens-color);
+    border: 1px solid var(--iron-color) !important;
+
+  }
+
+  & .choices__item {
+    padding-top: 4px;
+    font-size: 16px;
+    color: var(--manatee-color);
+  }
+
+}

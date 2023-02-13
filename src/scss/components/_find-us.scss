@@ -1,0 +1,28 @@
+.find-us {
+  padding-top: 12px;
+  padding-bottom: 115px;
+  background-color: var(--athens-color);
+
+  &__title {
+    padding-bottom: 15px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+  }
+
+  &__link svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--storm-color);
+  }
+}
+
+.container {}
+
+.title {}
+
+.title--center {}

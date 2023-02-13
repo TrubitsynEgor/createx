@@ -1,0 +1,70 @@
+.offices {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--athens-color);
+
+  &__title {}
+
+  &__descr {}
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 123px;
+  }
+
+  &__item {
+    grid-column: 4 span;
+    max-width: 250px;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -48.5%;
+      width: 1px;
+      height: 254px;
+      background-color: var(--storm-color);
+      opacity: .2;
+    }
+  }
+
+  &__item-subtitle {
+    margin: 0;
+    padding-bottom: 8px;
+  }
+
+  &__item-address {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--ebony-color);
+  }
+
+  &__item-link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-decoration: underline;
+    color: var(--primary-color);
+  }
+
+  &__item-contacts {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__item-contacts-link {
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--ebony-color);
+    padding-bottom: 4px;
+
+    & span {
+      color: var(--storm-color);
+      padding-right: 4px;
+    }
+  }
+}

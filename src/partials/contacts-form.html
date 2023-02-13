@@ -1,0 +1,81 @@
+<section class="contacts-form">
+  <div class="container">
+    <h2 class="contacts-form__title title title--center">
+      Contact us
+    </h2>
+    <div class="contacts-form__descr descr descr--center descr--big">Please complete the form. Detailed information will
+      help us to make a tuned offer.</div>
+    <div class="contacts-form__box">
+      <img src="img/contacts/contacts-content-img_01.jpg" alt="" class="contacts-form__img">
+      <form action="" class="contacts-form__form">
+        <label class=" contacts-form__label">
+          <span class=" contacts-form__caption">Name*</span>
+          <input type="text" name="Name" class="input-reset  contacts-form__input" required placeholder="Your name">
+        </label>
+        <label class=" contacts-form__label">
+          <span class=" contacts-form__caption">I am interested in</span>
+          <select name="Location" class="input-reset custom-select  contacts-form__input">
+            <option value="Choose your location">Choose your interested</option>
+            <option value="New York">Interior Design</option>
+            <option value="New Jersy">Construction</option>
+            <option value="Los Angeles">Project Development</option>
+            <option value="Detroit">Repairs</option>
+          </select>
+        </label>
+        <label class=" contacts-form__label">
+          <span class=" contacts-form__caption">Phone*</span>
+          <input type="tel" name="Phone" class="input-reset  contacts-form__input" required
+            placeholder="Your phone number">
+        </label>
+        <label class=" contacts-form__label">
+          <span class=" contacts-form__caption">Location*</span>
+          <select name="Location" class="input-reset custom-select contacts-form__input" required>
+            <option value="Choose your location">Choose your location</option>
+            <option value="New York">New York</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Detroit">Detroit</option>
+          </select>
+        </label>
+        <label class=" contacts-form__label">
+          <span class=" contacts-form__caption">Email</span>
+          <input type="email" name="Email" class="input-reset   contacts-form__input" required
+            placeholder="Your working email">
+        </label>
+
+        <label class=" contacts-form__label">
+          <span class=" contacts-form__caption contacts-form__caption--radio">Preferred contact method</span>
+          <div class="contacts-form__radio-box">
+            <div class="contacts-form__radio-item">
+              <input id="radio-01" type="radio" name="radio" class="input-reset custom-radio contacts-form__radio"
+                required placeholder="Your working email">
+              <label for="radio-01" class="contacts-form__radio-caption">Phone</label>
+            </div>
+            <div class="contacts-form__radio-item">
+              <input id="radio-02" type="radio" name="radio" class="input-reset custom-radio contacts-form__radio"
+                required placeholder="Your working email">
+              <label for="radio-02" class="contacts-form__radio-caption">Email</label>
+            </div>
+            <div class="contacts-form__radio-item">
+              <input id="radio-03" type="radio" name="radio" class="input-reset custom-radio contacts-form__radio"
+                required placeholder="Your working email">
+              <label for="radio-03" class="contacts-form__radio-caption">Viber</label>
+            </div>
+          </div>
+        </label>
+
+        <label class=" contacts-form__label contacts-form__label--big">
+          <span class=" contacts-form__caption">Message*</span>
+          <textarea class="input-reset  contacts-form__input contacts-form__input--big" placeholder="Your message"
+            required></textarea>
+        </label>
+        <label class="custom-checkbox form-request__label">
+          <input type="checkbox" name="checkbox" class="input-reset custom-checkbox__input" required>
+          <span class="custom-checkbox__content">I agree to receive communications from Createx Construction
+            Bureau.</span>
+        </label>
+        <button class="btn btn-reset btn--fill contacts-form__btn" type="submit">send request</button>
+      </form>
+    </div>
+  </div>
+</section>
