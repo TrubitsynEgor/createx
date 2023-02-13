@@ -18,11 +18,9 @@
     width: 32px;
     height: 32px;
     fill: var(--storm-color);
+
+    &:hover {
+      fill: var(--primary-color);
+    }
   }
 }
-
-.container {}
-
-.title {}
-
-.title--center {}
