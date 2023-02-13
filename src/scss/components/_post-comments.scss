@@ -1,0 +1,25 @@
+.comments {
+  padding-bottom: 115px;
+
+  &__title {
+    padding-bottom: 34px;
+  }
+
+  &__list {}
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 54px;
+    }
+  }
+}
+
+.title {}
+
+.title--center {}
+
+.list-reset {}
+
+
+
+.btn-reset {}

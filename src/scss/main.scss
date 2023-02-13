@@ -4,6 +4,7 @@
 @import "fonts";
 @import "settings";
 
+
 // подключения компонентов страницы (Большие)
 @import "./components/header";
 @import "./components/hero";
@@ -37,6 +38,7 @@
 @import "./components/hero-news";
 @import "./components/categories";
 @import "./components/post";
+@import "./components/post-comments";
 // подключения компонентов страницы (Малые)
 @import "./components/nav";
 @import "./components/video-block";
@@ -45,3 +47,5 @@
 @import "./components/services-block";
 @import "./components/map";
 @import "./components/modals";
+@import "./components/comment";
+@import "./components/post-form";

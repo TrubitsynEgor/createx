@@ -1,0 +1,69 @@
+.post-form {
+
+  &__title {
+    padding-bottom: 23px;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__label {
+    flex: 1 0 45%;
+    margin: 0;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  &__label-caption {
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--grey-color);
+  }
+
+  &__input {
+    background: #F4F5F7;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    width: 390px;
+    padding: 13px 0;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--grey-color);
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--manatee-color);
+    }
+
+
+  }
+
+  &__label--big {
+    flex: 1 0 100%;
+    padding-top: 21px;
+    padding-bottom: 43px;
+
+  }
+
+  &__input--big {
+    width: 100%;
+    resize: none;
+    padding: 15px 15px 34px 15px;
+
+  }
+
+  &__btn {
+    margin: 0 auto;
+    padding: 4px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+}

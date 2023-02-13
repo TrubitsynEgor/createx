@@ -1,19 +1,26 @@
 .post {
-  transform: translateY(-80px);
+  padding-bottom: 181px;
+
+  &__wrapper {
+    max-width: 840px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+  }
 
   &__content-img {
+    display: block;
+    margin-top: -80px;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 4px;
-    padding-bottom: 77px;
+
 
   }
 
   &__content {
-    max-width: 810px;
-    margin: 0 auto;
-
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   &__content-subtitle {
