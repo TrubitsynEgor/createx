@@ -99,5 +99,3 @@ if (categoriesTabs) {
   })
 }
 
-
-

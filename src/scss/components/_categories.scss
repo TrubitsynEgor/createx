@@ -6,16 +6,6 @@
     padding-bottom: 15px;
   }
 
-  &__tabs {}
-}
-
-.categories-tabs {
-
-  &__nav {}
-
-  &__content {}
-
-  &__pagination {}
 }
 
 .tabs-nav {
@@ -44,16 +34,12 @@
   }
 }
 
-
-
 .tabs-body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   row-gap: 60px;
   column-gap: 30px;
   margin-bottom: 58px;
-
-
 
   &__item {
     grid-column: 6 span;
@@ -67,22 +53,17 @@
     }
   }
 
-  &__link {}
-
   &__img {
     margin-bottom: 20px;
-
   }
 
   &__content {
     padding: 0 24px;
-
   }
 
   &__title {
     margin: 0;
     margin-bottom: 14px;
-
   }
 
   &__caption {
@@ -91,11 +72,17 @@
     line-height: 150%;
     color: var(--storm-color);
 
+    &--current {
+      font-size: 16px;
+      line-height: 160%;
+    }
   }
 
   &__news {
     position: relative;
     padding-right: 21px;
+
+
 
     &::after {
       content: '';
@@ -105,6 +92,15 @@
       width: 1px;
       height: 12px;
       background-color: var(--storm-color);
+    }
+
+    &--current {
+      color: var(--primary-color);
+      font-weight: 700;
+
+      &::after {
+        height: 15px;
+      }
     }
   }
 
@@ -121,11 +117,34 @@
       height: 12px;
       background-color: var(--storm-color);
     }
+
+    &--current {
+      padding-left: 27px;
+
+      &::after {
+        height: 15px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: -2px;
+        width: 20px;
+        height: 20px;
+        background: url('../img/news/clock.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+    }
   }
 
   &__coments {
     position: relative;
     padding-left: 32px;
+
 
     &::after {
       content: '';
@@ -139,6 +158,18 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+
+
+    &--current {
+      padding-left: 37px;
+
+      &::after {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+
   }
 
   &__descr {
@@ -155,16 +186,11 @@
   }
 }
 
-.subtitle {}
-
 .pagination {
   padding-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-
 
   &__btn {
     padding-right: 22px;

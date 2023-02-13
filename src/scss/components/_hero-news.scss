@@ -7,3 +7,43 @@
   padding-bottom: 218px;
 
 }
+
+.hero-post {
+  background-color: var(--light-color);
+  padding-top: 153px;
+  padding-bottom: 218px;
+
+  &__title {
+    padding-top: 39px;
+    padding-bottom: 25px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+
+  &__social-list {
+    display: flex;
+    gap: 13px;
+  }
+
+  &__social-item:hover {
+    .hero-post__social-icon {
+      fill: var(--primary-color);
+    }
+  }
+
+  &__social-link {}
+
+  &__social-icon {
+    fill: var(--storm-color);
+    width: 24px;
+    height: 24px;
+
+
+  }
+}
