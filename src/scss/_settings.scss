@@ -217,6 +217,10 @@ address {
     line-height: 160%;
   }
 
+  &--gray {
+    color: var(--grey-color);
+  }
+
   &--big {
     font-size: 18px;
   }

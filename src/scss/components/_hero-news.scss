@@ -9,9 +9,9 @@
 }
 
 .hero-post {
-  background-color: var(--light-color);
+  background-color: var(--athens-color);
   padding-top: 153px;
-  padding-bottom: 218px;
+  padding-bottom: 158px;
 
   &__title {
     padding-top: 39px;
@@ -25,7 +25,6 @@
 
   }
 
-
   &__social-list {
     display: flex;
     gap: 13px;
@@ -37,13 +36,10 @@
     }
   }
 
-  &__social-link {}
-
   &__social-icon {
     fill: var(--storm-color);
     width: 24px;
     height: 24px;
-
-
+    opacity: 1;
   }
 }

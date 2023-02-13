@@ -1,0 +1,103 @@
+.post {
+  transform: translateY(-80px);
+
+  &__content-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    padding-bottom: 77px;
+
+  }
+
+  &__content {
+    max-width: 810px;
+    margin: 0 auto;
+
+  }
+
+  &__content-subtitle {
+    padding-bottom: 25px;
+  }
+
+  &__content-descr {
+    margin: 0;
+    padding-bottom: 49px;
+
+    & p {
+      margin: 0;
+    }
+
+    & p:first-child {
+      padding-bottom: 27px;
+    }
+  }
+
+  &__content-subtitle--quote {
+    padding-left: 58px;
+    position: relative;
+    padding-bottom: 49px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 28px;
+      height: 20px;
+      background: url('../img/page-about/braces.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  }
+
+  &__content-caption {
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  &__content-list {
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--grey-color);
+    padding-bottom: 25px;
+  }
+
+  &__content-item {
+    position: relative;
+
+    &:not(:last-child) {
+      padding-bottom: 4px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -32px;
+      top: 15%;
+      background: url('../img/page-work/check.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 16px;
+      height: 16px;
+    }
+
+  }
+
+  &__content-social {
+    display: flex;
+    gap: 12px;
+    padding-top: 13px;
+
+    & span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--ebony-color);
+    }
+  }
+}
