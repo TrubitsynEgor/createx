@@ -48,6 +48,11 @@
   background-size: 40px 40px;
   background-repeat: no-repeat;
 
+  &:hover {
+    .contacts-link__value {
+      color: var(--primary-color);
+    }
+  }
 
   &__caption {
     font-weight: 700;
@@ -61,6 +66,8 @@
     font-size: 18px;
     line-height: 150%;
     color: var(--ebony-color);
+    transition: all 0.3s ease 0s;
+
   }
 
   &--call {

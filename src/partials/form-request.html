@@ -9,11 +9,12 @@
       <div class="form__content form-request__content">
         <label class=" form-request__label">
           <span class="form__label-caption form-request__label-caption">Name*</span>
-          <input type="text" name="Name" class="input-reset  form-request__input" placeholder="Your name">
+          <input type="text" name="Name" class="input-reset  form-request__input" required placeholder="Your name">
         </label>
         <label class=" form-request__label">
           <span class="form__label-caption form-request__label-caption">Phone*</span>
-          <input type="tel" name="Phone" class="input-reset  form-request__input" placeholder="Your phone number">
+          <input type="tel" name="Phone" class="input-reset  form-request__input" required
+            placeholder="Your phone number">
         </label>
         <label class=" form-request__label">
           <span class="form__label-caption form-request__label-caption">Email</span>
@@ -21,12 +22,13 @@
         </label>
         <label class="form-request__label form-request__label--big">
           <span class="form__label-caption form-request__label-caption">Message*</span>
-          <textarea name="Message" class="input-reset form-request__input form-request__input--big"
+          <textarea name="Message" class="input-reset form-request__input form-request__input--big" required
             placeholder="Your message"></textarea>
         </label>
         <label class="custom-checkbox form-request__label">
-          <input type="checkbox" name="checkbox" class="input-reset custom-checkbox__input">
-          <span class="custom-checkbox__content">I agree to receive communications from Createx Construction
+          <input type="checkbox" name="checkbox" required class="input-reset custom-checkbox__input">
+          <span class="custom-checkbox__content" tabindex="0">I agree to receive communications from Createx
+            Construction
             Bureau.</span>
         </label>
         <button class="btn-reset form__btn form-request__btn btn btn--fill" type="submit">send request</button>

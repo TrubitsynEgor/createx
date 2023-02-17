@@ -15,6 +15,17 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--grey-color);
+    transition: all 0.3s ease 0s;
+
+    &:focus {}
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
 
     &:not([href]) {
       color: var(--primary-color);
