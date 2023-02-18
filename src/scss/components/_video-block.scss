@@ -14,7 +14,20 @@
     z-index: 3;
     background: rgba(#1e212c, 0.6);
     border-radius: 4px;
+    transition: all 0.3s ease 0s;
+
+
+
   }
+
+  &--played {
+    &::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+
 
   &__content {
     display: block;
@@ -35,6 +48,12 @@
     width: 80px;
     height: 80px;
     border-radius: 100%;
+    transition: all 0.3s ease 0s;
+
+    &--played {
+      opacity: 0;
+      visibility: hidden;
+    }
 
     & svg {
       margin-left: 8px;
@@ -62,27 +81,5 @@
 
   }
 
-  &__mute {
-    @include flex-all-center;
-    background-color: rgba(255, 255, 255, 0.12);
-    position: absolute;
-    left: 2.8%;
-    bottom: 6%;
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
 
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.4);
-    }
-
-    & svg {
-      height: 14px;
-      width: 14px;
-      fill: var(--light-color);
-    }
-  }
 }
