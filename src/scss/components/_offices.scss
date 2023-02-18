@@ -3,10 +3,6 @@
   padding-bottom: 80px;
   background-color: var(--athens-color);
 
-  &__title {}
-
-  &__descr {}
-
   &__box {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -48,6 +44,11 @@
     padding-bottom: 4px;
     text-decoration: underline;
     color: var(--primary-color);
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: var(--active-color);
+    }
   }
 
   &__item-contacts {
@@ -61,10 +62,17 @@
     line-height: 160%;
     color: var(--ebony-color);
     padding-bottom: 4px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: var(--primary-color);
+    }
 
     & span {
       color: var(--storm-color);
       padding-right: 4px;
+
+
     }
   }
 }

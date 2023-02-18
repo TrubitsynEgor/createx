@@ -86,5 +86,26 @@ if (sliderHistoryEl) {
 }
 
 
+const heroSlider = new Swiper('.hero-slider', {
+  slidesPerView: 1,
+  navigation: {
+    prevEl: '.hero__prev',
+    nextEl: '.hero__next',
+  },
+  pagination: {
+    el: '.hero__pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+  on: {
+    init: function () {
+      const paginationBullets = document.querySelectorAll('.hero__pagination .swiper-pagination-bullet');
+      paginationBullets.forEach(el => {
+        el.innerHTML = `<span class="hero__bar"></span>`
+      });
+    }
+  }
+});
+
 
 

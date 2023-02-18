@@ -199,6 +199,10 @@
     line-height: 160%;
     color: var(--grey-color);
 
+    &:hover {
+      color: var(--primary-color);
+    }
+
     &.active {
       color: var(--primary-color);
     }
@@ -209,6 +213,10 @@
       height: 24px;
       fill: var(--grey-color);
       align-items: flex-end;
+
+      &:hover {
+        fill: var(--primary-color);
+      }
     }
   }
 }

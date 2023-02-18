@@ -59,7 +59,16 @@
 
     &:not([href]) {
       color: #9A9CA5;
+
+      &:hover {
+        color: #9A9CA5;
+      }
     }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
   }
 }
 

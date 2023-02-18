@@ -18,6 +18,7 @@
     width: 32px;
     height: 32px;
     fill: var(--storm-color);
+    transition: all 0.3s ease 0s;
 
     &:hover {
       fill: var(--primary-color);
