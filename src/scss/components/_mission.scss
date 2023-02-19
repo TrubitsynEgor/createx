@@ -9,6 +9,10 @@
 
   &--benefits {
     padding-bottom: 126px;
+
+    @include mobile {
+      padding-bottom: 30px;
+    }
   }
 
   &__descr {

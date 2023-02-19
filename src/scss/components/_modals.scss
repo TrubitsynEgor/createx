@@ -4,6 +4,10 @@
     height: 412px;
     border-radius: 4px;
 
+    @include mobile {
+      width: 300px;
+    }
+
     &--2 {
       height: auto;
     }
@@ -51,6 +55,10 @@
       padding-left: 30px;
       cursor: pointer;
 
+      @include mobile {
+        margin-right: 120px;
+      }
+
       &::after {
         content: '';
         position: absolute;
@@ -79,6 +87,10 @@
     font-size: 14px;
     line-height: 150%;
     color: var(--manatee-color);
+
+    @include mobile {
+      width: 280px;
+    }
 
     &--big {
       height: 86px;
@@ -114,6 +126,9 @@
   background: var(--athens-color);
   border: 1px solid var(--iron-color) !important;
 
+  @include mobile {
+    width: 280px;
+  }
 }
 
 .choices__item {
