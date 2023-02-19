@@ -19,23 +19,59 @@
   &__container {
     @include flex-v-center;
     @include flex-all-sb;
+
+    @include tablet {
+      justify-content: flex-start;
+
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: flex-start;
+    }
   }
 
   &__nav {
     margin-left: -112px;
+
+    @include small-desktop {
+      margin-left: 0;
+    }
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 
 .header-contacts {
   @include flex-v-center;
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
   &__link {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
+
+
     &:not(:last-child) {
       margin-right: 35px;
+
+      @include small-desktop {
+        margin-right: 15px;
+      }
+
+      @include mobile {
+        margin-right: 35px;
+
+      }
     }
 
 
@@ -47,6 +83,17 @@
   background-position: left center;
   background-size: 40px 40px;
   background-repeat: no-repeat;
+
+  @include tablet {
+    margin-left: 20px;
+
+  }
+
+  @include mobile {
+    margin: 0px;
+
+  }
+
 
   &:hover {
     .contacts-link__value {

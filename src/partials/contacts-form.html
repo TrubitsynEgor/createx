@@ -7,15 +7,14 @@
       help us to make a tuned offer.</div>
     <div class="contacts-form__box">
       <img src="img/contacts/contacts-content-img_01.jpg" alt="" class="contacts-form__img">
-      <form action="" class="contacts-form__form">
+      <form id="form-3" action="" class="contacts-form__form">
         <label class=" contacts-form__label">
           <span class=" contacts-form__caption">Name*</span>
-          <input type="text" name="Name" class="input-reset  contacts-form__input" required placeholder="Your name">
+          <input type="text" name="Name" class="input-reset  contacts-form__input input-name" placeholder="Your name">
         </label>
         <label class=" contacts-form__label">
           <span class=" contacts-form__caption">I am interested in</span>
           <select name="Location" class="input-reset custom-select  contacts-form__input">
-            <option>Choose your interested</option>
             <option value="Interior Design">Interior Design</option>
             <option value="Construction">Construction</option>
             <option value="Project Development">Project Development</option>
@@ -24,13 +23,12 @@
         </label>
         <label class=" contacts-form__label">
           <span class=" contacts-form__caption">Phone*</span>
-          <input type="tel" name="Phone" class="input-reset  contacts-form__input" required
+          <input type="tel" name="Phone" class="input-reset  contacts-form__input input-tel"
             placeholder="Your phone number">
         </label>
         <label class=" contacts-form__label">
           <span class=" contacts-form__caption">Location*</span>
-          <select name="Location" class="input-reset custom-select contacts-form__input" required>
-            <option>Choose your location</option>
+          <select name="Location" class="input-reset custom-select contacts-form__input">
             <option value="New York">New York</option>
             <option value="New Jersey">New Jersey</option>
             <option value="Los Angeles">Los Angeles</option>
@@ -39,7 +37,7 @@
         </label>
         <label class=" contacts-form__label">
           <span class=" contacts-form__caption">Email</span>
-          <input type="email" name="Email" class="input-reset   contacts-form__input" required
+          <input type="email" name="Email" class="input-reset contacts-form__input input-email"
             placeholder="Your working email">
         </label>
 
@@ -47,18 +45,21 @@
           <span class=" contacts-form__caption contacts-form__caption--radio">Preferred contact method</span>
           <div class="contacts-form__radio-box">
             <div class="contacts-form__radio-item">
-              <input id="radio-01" type="radio" name="radio" class="input-reset custom-radio contacts-form__radio"
-                required placeholder="Your working email" value="Phone">
+              <input id="radio-01" type="radio" name="radio"
+                class="input-reset custom-radio contacts-form__radio input-radio" placeholder="Your working email"
+                value="Phone" checked>
               <label for="radio-01" class="contacts-form__radio-caption">Phone</label>
             </div>
             <div class="contacts-form__radio-item">
-              <input id="radio-02" type="radio" name="radio" class="input-reset custom-radio contacts-form__radio"
-                required placeholder="Your working email" value="Email">
+              <input id="radio-02" type="radio" name="radio"
+                class="input-reset custom-radio contacts-form__radio input-radio" placeholder="Your working email"
+                value="Email">
               <label for="radio-02" class="contacts-form__radio-caption">Email</label>
             </div>
             <div class="contacts-form__radio-item">
-              <input id="radio-03" type="radio" name="radio" class="input-reset custom-radio contacts-form__radio"
-                required placeholder="Your working email" value="Viber">
+              <input id="radio-03" type="radio" name="radio"
+                class="input-reset custom-radio contacts-form__radio input-radio" placeholder="Your working email"
+                value="Viber">
               <label for="radio-03" class="contacts-form__radio-caption">Viber</label>
             </div>
           </div>
@@ -66,11 +67,11 @@
 
         <label class=" contacts-form__label contacts-form__label--big">
           <span class=" contacts-form__caption">Message*</span>
-          <textarea class="input-reset  contacts-form__input contacts-form__input--big" placeholder="Your message"
-            required></textarea>
+          <textarea class="input-reset  contacts-form__input contacts-form__input--big input-message"
+            placeholder="Your message"></textarea>
         </label>
         <label class="custom-checkbox form-request__label">
-          <input type="checkbox" name="checkbox" class="input-reset custom-checkbox__input" required>
+          <input type="checkbox" name="checkbox" class="input-reset custom-checkbox__input" checked>
           <span class="custom-checkbox__content">I agree to receive communications from Createx Construction
             Bureau.</span>
         </label>

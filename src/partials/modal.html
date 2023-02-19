@@ -1,6 +1,6 @@
 <div class="graph-modal">
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="1">
-    <button class="btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+    <button class="btn-reset js-modal-close" aria-label="Closed modal">
       <img src="img/page-positions/cross.svg" alt="" class="close-img">
     </button>
     <div class="graph-modal__content">
@@ -9,11 +9,12 @@
       <form action="#" class="modal-form">
         <label class="modal-form__label">
           <span class="modal-form__caption">Name*</span>
-          <input type="text" name="Name" class="input-reset modal-form__input" placeholder="Your name">
+          <input type="text" name="Name" class="input-reset modal-form__input input-name" placeholder="Your name">
         </label>
         <label class="modal-form__label">
           <span class="modal-form__caption">Email*</span>
-          <input type="email" name="Email" class="input-reset  modal-form__input" placeholder="Your working email">
+          <input type="email" name="Email" class="input-reset  modal-form__input input-email"
+            placeholder="Your working email">
         </label>
         <button class="btn btn-reset btn--fill modal-form__btn" type="submit">send</button>
       </form>
@@ -35,8 +36,7 @@
         </label>
         <label class="modal-form__label">
           <span class="modal-form__caption">Location*</span>
-          <select name="Location" class="input-reset custom-select modal-form__input">
-            <option value="Choose your location">Choose your location</option>
+          <select name="Location" class="input-reset custom-select modal-form__input input-select">
             <option value="New York">New York</option>
             <option value="New Jersy">New Jersy</option>
             <option value="Los Angeles">Los Angeles</option>
@@ -55,13 +55,13 @@
         </label>
         <label class="modal-form__label">
           <span class="modal-form__caption">Сovering letter</span>
-          <textarea type="email" name="Email" class="input-reset  modal-form__input modal-form__input--big"
+          <textarea class="input-reset  modal-form__input modal-form__input--big "
             placeholder="Your covering letter"></textarea>
         </label>
         <label class="modal-form__label">
 
-          <input type="file" name="file" class="input-reset  modal-form__input visually-hidden">
-          <div class="modal-form__caption modal-form__caption--start">Attach your CV*</div>
+          <input type="file" name="file" class="input-reset  modal-form__input visually-hidden ">
+          <div class="modal-form__caption modal-form__caption--start input-file">Attach your CV*</div>
         </label>
         <button class="btn btn-reset btn--fill modal-form__btn" type="submit">send</button>
       </form>

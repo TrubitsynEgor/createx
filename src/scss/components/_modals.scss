@@ -5,7 +5,7 @@
     border-radius: 4px;
 
     &--2 {
-      height: 781px;
+      height: auto;
     }
   }
 
@@ -121,27 +121,13 @@
   color: var(--manatee-color);
 }
 
-.just-validate-success-field {
-  position: relative;
-}
 
-.just-validate-success-field::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  background: url('../img/input-mark.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
-}
+
 
 .just-validate-error-field {
   border: 1px solid var(--active-color);
-
+  border-radius: 4px;
 }
 
 .just-validate-error-label {

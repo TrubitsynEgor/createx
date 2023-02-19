@@ -45,6 +45,7 @@ if (element) {
   element.forEach(el => {
     const choices = new Choices(el, {
       searchEnabled: false,
+
     });
   })
 }
