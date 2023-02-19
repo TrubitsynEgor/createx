@@ -3,6 +3,18 @@
   position: relative;
   overflow: hidden;
 
+  @include tablet {
+    padding-bottom: 120px;
+  }
+
+  @include small-tablet {
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-bottom: 40px;
+  }
+
   &__bg {
     position: absolute;
   }
@@ -25,13 +37,36 @@
     position: relative;
     z-index: 5;
 
+    @media screen and (max-width: 1020px) {
+      display: flex;
+      flex-direction: column;
+
+      row-gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+    }
+
     &:not(:last-child) {
       padding-bottom: 120px;
+
+      @media screen and (max-width: 1020px) {
+        padding-bottom: 80px;
+      }
+
+      @include small-tablet {
+        padding-bottom: 60px;
+      }
+
+      @include mobile {
+        padding-bottom: 40px;
+      }
     }
   }
 
   &__content {
     padding-top: 20px 25px;
+
   }
 
   &__content-title {
@@ -45,6 +80,14 @@
     padding-bottom: 48px;
     width: 575px;
     letter-spacing: 0;
+
+    @include mobile {
+      width: 315px;
+    }
+
+    @media (max-width:325px) {
+      width: 300px;
+    }
   }
 
   &__content-btn {

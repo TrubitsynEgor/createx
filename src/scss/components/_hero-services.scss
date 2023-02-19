@@ -14,12 +14,11 @@
   }
 
   @include small-tablet {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 70px;
   }
 
   @include mobile {
-    padding-top: 30px;
     padding-bottom: 40px;
   }
 
