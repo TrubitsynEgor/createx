@@ -1,8 +1,6 @@
 .mission {
   background-color: var(--light-color);
 
-
-
   &--dark {
     padding-top: 81px;
     padding-bottom: 20px;
@@ -13,6 +11,11 @@
     padding-bottom: 126px;
   }
 
+  &__descr {
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
 
   &__box {
     --mission-gap: 94px;

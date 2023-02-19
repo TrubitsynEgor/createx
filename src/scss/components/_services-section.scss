@@ -6,15 +6,29 @@
   background-repeat: no-repeat;
   padding-bottom: 62px;
 
+  @include small-tablet {
+    padding-top: 150px;
+  }
+
   &__more {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 61px;
+
+    @include mobile {
+      flex-direction: column;
+
+    }
   }
 
   &__subtitle {
     padding-right: 43px;
+
+    @include mobile {
+      text-align: center;
+      padding-right: 0px;
+    }
   }
 
 }
@@ -25,6 +39,16 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 285px);
+
+
+  }
+
+  @include mobile {
+    grid-template-columns: 285px;
+  }
 }
 
 .services-link {

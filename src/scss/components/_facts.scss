@@ -4,6 +4,10 @@
   overflow: hidden;
   background-color: var(--light-color);
 
+  @include tablet {
+    padding-top: 120px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -27,6 +31,10 @@
     gap: 48px;
     justify-content: center;
 
+    @media screen and (max-width:766px) {
+      grid-template-columns: repeat(2, 148px);
+      row-gap: 58px;
+    }
   }
 
   &__box-title {

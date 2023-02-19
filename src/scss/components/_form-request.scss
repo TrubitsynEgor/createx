@@ -19,6 +19,12 @@
     padding: 48px 40px;
     max-width: 495px;
     margin-top: -25px;
+
+    @include mobile {
+      margin-top: -45px;
+      max-width: 340px;
+      padding: 10px 10px;
+    }
   }
 
   &__title {
@@ -45,6 +51,10 @@
     background: var(--athens-color);
     border: 1px solid var(--iron-color);
     border-radius: 4px;
+
+    @include mobile {
+      width: 320px;
+    }
   }
 
 

@@ -9,11 +9,29 @@
     position: relative;
     top: 60px;
     z-index: 5;
+
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    max-width: 495px;
+
+    @include mobile {
+      max-width: 320px;
+    }
   }
 
   &__content {
     max-width: 620px;
     position: relative;
+
+    @include mobile {
+      max-width: 320px;
+    }
   }
 
   &__title {
@@ -49,8 +67,8 @@
 
   &__slider-nav {
     position: absolute;
-    left: 39%;
-    bottom: 52px;
+    left: 25%;
+    bottom: 78px;
 
   }
 

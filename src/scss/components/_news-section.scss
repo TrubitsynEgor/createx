@@ -2,8 +2,20 @@
   padding-top: 165px;
   background-color: var(--light-color);
 
+  @include small-tablet {
+    padding-top: 100px;
+  }
+
+  @include mobile {
+    padding-top: 50px;
+  }
+
   &__bot {
     padding: 80px 0 125px;
+
+    @include mobile {
+      padding: 40px 0 65px;
+    }
   }
 
   &__title {
@@ -15,7 +27,19 @@
 
     display: grid;
     grid-template-columns: 705px 495px;
-    gap: 30px
+    gap: 30px;
+
+    @include tablet {
+      grid-template-columns: 495px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include mobile {
+      grid-template-columns: 340px;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -75,10 +99,18 @@
     &:not(:last-child) {
       border-right: 1px solid #787A80;
       padding-right: 12px;
+
+      @include mobile {
+        padding-right: 5px;
+      }
     }
 
     &:nth-child(2) {
       padding-left: 12px;
+
+      @include mobile {
+        padding-right: 5px;
+      }
     }
   }
 

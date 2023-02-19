@@ -3,8 +3,26 @@
   padding-bottom: 100px;
   background: var(--athens-color);
 
+  @include small-tablet {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+
   &--services {
     padding-bottom: 119px;
+
+    @include small-tablet {
+      padding-bottom: 80px;
+    }
+
+    @include mobile {
+      padding-bottom: 40px;
+    }
   }
 
   &--work {
@@ -15,12 +33,28 @@
 
   &__title {
     padding-bottom: 34px;
+
+    @include small-tablet {
+      padding-bottom: 0px;
+    }
   }
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 105px;
+    grid-template-columns: repeat(auto-fill, 120px);
+    gap: 100px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(3, 120px);
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 120px);
+
+    }
   }
 
   &__img {

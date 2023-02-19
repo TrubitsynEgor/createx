@@ -1,4 +1,9 @@
 .about-section {
   padding-bottom: 60px;
   background-color: var(--light-color);
+
+  @include mobile {
+    padding-bottom: 30px;
+
+  }
 }

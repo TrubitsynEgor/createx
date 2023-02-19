@@ -15,6 +15,18 @@ const portfolioSlider = new Swiper('.portfolio-section__slider', {
   navigation: {
     nextEl: '.portfolio-section__next',
     prevEl: '.portfolio-section__prev',
+  },
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    }
   }
 });
 

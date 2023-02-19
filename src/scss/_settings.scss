@@ -123,6 +123,14 @@ address {
 
 .section-offset {
   padding-top: 120px;
+
+  @include small-tablet {
+    padding-top: 80px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+  }
 }
 
 .main-title {

@@ -16,6 +16,11 @@
       gap: 40px;
       padding-bottom: 28px;
     }
+
+    @include small-tablet {
+      row-gap: 20px;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__top-social {
@@ -23,10 +28,22 @@
     flex-direction: column;
     padding-bottom: 49px;
 
+    @include small-tablet {
+      padding-bottom: 29px;
+    }
+
+    @include mobile {
+      padding-bottom: 0px;
+    }
+
   }
 
   &__social-logo {
     padding-right: 44px;
+
+    @include mobile {
+      padding-right: 10px;
+    }
 
 
 
@@ -82,6 +99,11 @@
       gap: 40px;
       padding-bottom: 28px;
     }
+
+    @include mobile {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
   }
 
 
@@ -122,6 +144,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 40px;
+    }
   }
 
   &__copyright-descr {
@@ -148,6 +176,8 @@
   &__copyright-btn-box {
     display: flex;
     align-items: center;
+
+    @include mobile {}
 
   }
 
@@ -204,9 +234,14 @@
     }
   }
 
+  &__box {
+    max-width: 495px;
+    position: relative;
+  }
+
   &__btn {
     position: absolute;
-    right: 0;
+    right: 10%;
     top: 0;
     width: 131px;
     height: 44px;
@@ -214,6 +249,10 @@
     font-size: 14px;
     letter-spacing: 0.5px;
     border-radius: 0 3px 3px 0;
+
+    @include mobile {
+      right: 0;
+    }
   }
 }
 
