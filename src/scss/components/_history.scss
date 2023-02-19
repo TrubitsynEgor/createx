@@ -3,6 +3,11 @@
   background-color: var(--athens-color);
   padding-bottom: 80px;
 
+  @include small-tablet {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
   &__top {
     display: flex;
     align-items: center;
@@ -23,12 +28,35 @@
     display: grid;
     grid-template-columns: 420px 820px;
 
+    @include tablet {
+      grid-template-columns: 320px 620px;
+    }
+
+    @media screen and (max-width: 913px) {
+      grid-template-columns: 270px 470px;
+    }
+
+    @media screen and (max-width: 760px) {
+      grid-template-columns: 370px;
+    }
+
+    @media screen and (max-width: 375px) {
+      grid-template-columns: 320px;
+    }
+
+    @media screen and (max-width: 335px) {
+      grid-template-columns: 300px;
+    }
+
   }
 
   &__slider-nav {
     padding-left: 40px;
     padding-right: 30px;
 
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
 
     & .swiper-wrapper {
       display: flex;

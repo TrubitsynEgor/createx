@@ -13,17 +13,25 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__form {
     padding: 48px 40px;
     max-width: 495px;
-    margin-top: -25px;
+    margin-top: -45px;
+
+    @include small-tablet {
+      margin-top: -55px;
+
+    }
 
     @include mobile {
-      margin-top: -45px;
       max-width: 340px;
-      padding: 10px 10px;
+      padding: 20px 10px;
     }
   }
 
@@ -53,7 +61,7 @@
     border-radius: 4px;
 
     @include mobile {
-      width: 320px;
+      width: 280px;
     }
   }
 

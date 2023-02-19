@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include small-tablet {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
   &--inner {
     background-color: var(--athens-color);
     padding-bottom: 126px;

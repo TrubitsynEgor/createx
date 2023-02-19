@@ -2,11 +2,27 @@
   padding-top: 121px;
   padding-bottom: 50px;
 
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: 240px 240px 240px 264px;
     justify-content: space-between;
 
+    @include tablet {
+      grid-template-columns: 240px 264px;
+      align-items: center;
+      justify-content: center;
+      row-gap: 30px;
+    }
+
+    @include mobile {
+      grid-template-columns: 264px;
+
+    }
 
   }
 

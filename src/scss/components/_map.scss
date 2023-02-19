@@ -8,10 +8,25 @@
     background-size: contain;
     min-height: 883px;
 
+    @include tablet {
+      min-height: 783px;
+    }
+
+    @include small-tablet {
+      min-height: 683px;
+    }
+
+    @include mobile {
+      min-height: 383px;
+    }
   }
 
   &__title {
     padding-top: 81px;
+
+    @include mobile {
+      padding-top: 31px;
+    }
 
     margin: 0;
 

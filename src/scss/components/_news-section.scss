@@ -2,6 +2,10 @@
   padding-top: 165px;
   background-color: var(--light-color);
 
+  @include tablet {
+    padding-top: 120px;
+  }
+
   @include small-tablet {
     padding-top: 100px;
   }

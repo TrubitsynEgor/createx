@@ -4,10 +4,21 @@
 
 .burger {
   position: fixed;
-  right: 15px;
-  top: 15px;
+  right: 25px;
+  top: 25px;
   color: var(--primary-color);
   z-index: 100;
+  display: none;
+
+
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    right: 15px;
+    top: 15px;
+  }
 }
 
 .menu--active {
@@ -18,7 +29,7 @@
   display: block;
   width: 80%;
   height: 100vh;
-  background-color: rgba(#424551, 0.5);
+  background-color: rgba(#424551, 0.8);
 
   .nav__list {
     height: 100vh;

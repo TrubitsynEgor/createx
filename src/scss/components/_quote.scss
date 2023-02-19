@@ -6,9 +6,26 @@
   background-position: right -10px top 124px;
   background-repeat: no-repeat;
 
+  @include tablet {
+    padding-bottom: 120px;
+  }
+
+  @include small-tablet {
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-bottom: 40px;
+    padding-top: 0;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    @media screen and (max-width:700px) {
+      grid-template-columns: 1fr;
+    }
 
   }
 
@@ -16,6 +33,7 @@
     grid-column: 5 span;
     position: relative;
     top: 140px;
+
 
     & img {
       width: 525px;
@@ -38,6 +56,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+      padding: 60px 85px 50px 85px;
+    }
+
+    @include small-tablet {
+      padding: 40px 65px 30px 65px;
+    }
+
+    @media screen and (max-width:700px) {
+      left: 0;
+      padding: 30px;
+    }
+
   }
 
   &__descr {
@@ -55,6 +87,10 @@
       background-repeat: no-repeat;
       background-size: cover;
 
+      @media screen and (max-width:700px) {
+        left: -15.1%;
+        top: 0;
+      }
     }
 
     & p {

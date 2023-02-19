@@ -17,7 +17,7 @@ const portfolioSlider = new Swiper('.portfolio-section__slider', {
     prevEl: '.portfolio-section__prev',
   },
   breakpoints: {
-    360: {
+    320: {
       slidesPerView: 1,
     },
 

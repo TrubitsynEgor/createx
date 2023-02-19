@@ -5,6 +5,15 @@
   background-position: bottom -320px left -8px;
   background-repeat: no-repeat;
 
+  @include small-tablet {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  @include mobile {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
 
 
   &__list {
@@ -13,11 +22,31 @@
     gap: 30px;
     padding-bottom: 49px;
 
+    @include mobile {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__item {
     grid-column: 3 span;
     position: relative;
+
+    @include tablet {
+      grid-column: 4 span;
+    }
+
+    @media screen and (max-width:700px) {
+      grid-column: 6 span;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     &:hover {
       .ourteam__social {
