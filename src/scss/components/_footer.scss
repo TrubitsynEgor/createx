@@ -57,7 +57,7 @@
     gap: 16px;
 
     @media screen and (max-width:350px) {
-      gap: 10px;
+      gap: 8px;
     }
   }
 
@@ -72,6 +72,10 @@
     line-height: 150%;
     color: var(--light-color);
     opacity: 0.6;
+
+    @media screen and (max-width:350px) {
+      max-width: 300px;
+    }
   }
 
 
@@ -227,6 +231,10 @@
       width: 340px;
     }
 
+    @media screen and (max-width: 350px) {
+      width: 300px;
+    }
+
 
     &::placeholder {
       font-size: 14px;
@@ -254,6 +262,10 @@
 
     @include mobile {
       right: 0;
+    }
+
+    @media screen and (max-width: 350px) {
+      width: 90px;
     }
   }
 }

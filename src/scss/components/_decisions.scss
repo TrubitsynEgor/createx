@@ -9,10 +9,22 @@
     position: relative;
     margin-bottom: -60px;
 
+    @media screen and (max-width: 1200px) {
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 968px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__img {
     grid-column: 5 span;
+
+
   }
 
   &__content {
@@ -21,6 +33,10 @@
 
   &__title {
     padding-bottom: 35px;
+
+    @include mobile {
+      padding-bottom: 20px;
+    }
   }
 
   &__list {}
@@ -53,9 +69,3 @@
 
   }
 }
-
-.container {}
-
-.title {}
-
-.list-reset {}

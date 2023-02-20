@@ -2,18 +2,48 @@
   padding-top: 123px;
   padding-bottom: 120px;
 
+  @include tablet {
+    padding-top: 102px;
+    padding-bottom: 100px;
+  }
+
+  @include small-tablet {
+    padding-top: 73px;
+    padding-bottom: 77px;
+  }
+
+  @include mobile {
+    padding-top: 33px;
+    padding-bottom: 36px;
+  }
 
   &__box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    @media screen and (max-width: 1250px) {
+      grid-template-columns: 495px 1fr;
+    }
+
+    @media screen and (max-width: 838px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
   }
+
 
   &__img {
     width: 495px;
     height: 586px;
     object-fit: cover;
     display: block;
+
+    @media screen and (max-width: 838px) {
+      padding-bottom: 30px;
+    }
   }
 
   &__form {
@@ -22,6 +52,12 @@
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 20px;
+
+    @media screen and (max-width: 838px) {
+      align-items: center;
+      justify-content: center;
+
+    }
   }
 
   &__label {
@@ -120,6 +156,11 @@
     height: 128px;
     padding-top: 15px;
     resize: none;
+
+    @media screen and (max-width: 1250px) {
+
+      width: 100%;
+    }
   }
 
   &__btn {

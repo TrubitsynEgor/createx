@@ -3,6 +3,14 @@
   padding-bottom: 115px;
   background-color: var(--athens-color);
 
+  @include small-tablet {
+    padding-bottom: 85px;
+  }
+
+  @include mobile {
+    padding-bottom: 35px;
+  }
+
   &__title {
     padding-bottom: 15px;
   }

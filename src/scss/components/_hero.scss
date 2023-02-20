@@ -63,11 +63,23 @@
     left: calc((100% - 1260px) / 2) !important;
     bottom: -40px !important;
 
+    @media screen and (max-height: 740px) {
+      bottom: -140px !important;
+    }
+
+    @media screen and (max-height: 740px) {
+      bottom: -300px !important;
+    }
+
     @include big-desktop {
       left: calc((100% - 998px) / 2) !important;
     }
 
     @include tablet {
+      left: calc((100% - 768px) / 2) !important;
+    }
+
+    @media screen and (max-width: 998px) {
       display: none;
     }
 
@@ -118,6 +130,20 @@
   background-size: cover;
   padding-top: 153px;
   padding-bottom: 187px;
+
+  @include tablet {
+    padding-top: 123px;
+    padding-bottom: 137px;
+  }
+
+  @include small-tablet {
+    padding-top: 93px;
+    padding-bottom: 97px;
+  }
+
+  @include mobile {
+    padding-bottom: 47px;
+  }
 }
 
 

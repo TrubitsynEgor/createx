@@ -24,7 +24,7 @@ const portfolioSlider = new Swiper('.portfolio-section__slider', {
     640: {
       slidesPerView: 2,
     },
-    768: {
+    770: {
       slidesPerView: 3,
     }
   }
@@ -38,7 +38,8 @@ const testimonialsSlider = new Swiper('.testimonials__slider', {
   navigation: {
     nextEl: '.testimonials-section__next',
     prevEl: '.testimonials-section__prev',
-  }
+  },
+
 });
 
 const sliderWorkElement = document.querySelector('.work-slider');
@@ -50,6 +51,19 @@ if (sliderWorkElement) {
     freeMode: true,
     watchSlidesProgress: true,
     allowTouchMove: false,
+    breakpoints: {
+      320: {
+        slidesPerView: 4,
+
+      },
+      640: {
+        slidesPerView: 10.25,
+        spaceBetween: 3,
+      },
+      1200: {
+        spaceBetween: 0,
+      }
+    }
 
   });
   const workSlider = new Swiper(sliderWorkElement, {

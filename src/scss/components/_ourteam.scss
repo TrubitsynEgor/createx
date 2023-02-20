@@ -22,10 +22,11 @@
     gap: 30px;
     padding-bottom: 49px;
 
-    @include mobile {
-      grid-template-columns: 1fr;
-      justify-content: center;
+    @include tablet {
+      display: flex;
       align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
 
@@ -33,13 +34,8 @@
     grid-column: 3 span;
     position: relative;
 
-    @include tablet {
-      grid-column: 4 span;
-    }
 
-    @media screen and (max-width:700px) {
-      grid-column: 6 span;
-    }
+
 
     @include mobile {
       display: flex;

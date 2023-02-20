@@ -35,6 +35,11 @@
       grid-template-columns: repeat(2, 148px);
       row-gap: 58px;
     }
+
+    @media screen and (max-width:350px) {
+      grid-template-columns: repeat(2, 120px);
+      row-gap: 58px;
+    }
   }
 
   &__box-title {

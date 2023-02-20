@@ -3,10 +3,27 @@
   padding-bottom: 80px;
   background-color: var(--athens-color);
 
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   &__box {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 123px;
+
+    @media screen and (max-width: 1250px) {
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 900px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+    }
   }
 
   &__item {
@@ -23,6 +40,10 @@
       height: 254px;
       background-color: var(--storm-color);
       opacity: .2;
+
+      @media screen and (max-width: 1250px) {
+        display: none;
+      }
     }
   }
 
