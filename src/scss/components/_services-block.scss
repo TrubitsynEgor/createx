@@ -4,13 +4,29 @@
   &__tabs {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px
+    gap: 20px;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(auto-fill, 160px);
+      justify-content: center;
+
+    }
   }
 
   &__btn {
     width: 230px;
     height: 154px;
     transition: all 0.3s ease-in-out 0s;
+
+    @media screen and (max-width: 1252px) {
+      width: 160px;
+      height: 124px;
+    }
+
+    @include mobile {
+      width: 120px;
+      height: 80px;
+    }
 
   }
 
@@ -52,6 +68,13 @@
     object-fit: cover;
     pointer-events: none;
     transition: all 0.3s ease-in-out 0s;
+
+    @include mobile {
+
+      margin-bottom: 4px;
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &__descr {
@@ -62,6 +85,12 @@
     pointer-events: none;
     transition: all 0.3s ease-in-out 0s;
 
+    @include mobile {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 120%;
+
+    }
 
   }
 }

@@ -2,16 +2,44 @@
   padding-top: 121px;
   padding-bottom: 103px;
 
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 83px;
+  }
+
+  @include small-tablet {
+    padding-top: 60px;
+    padding-bottom: 53px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 30px;
+
+
   }
 
   &__item {
     grid-column: 4 span;
     display: none;
 
+    @include small-tablet {
+      grid-column: 6 span;
+    }
+
+    @include mobile {
+      grid-column: 12 span;
+    }
+
+    @media screen and (max-width: 355px) {
+      grid-column: 11 span;
+    }
 
   }
 

@@ -29,9 +29,23 @@
   padding-top: 153px;
   padding-bottom: 158px;
 
+  @include tablet {
+    padding-top: 100px;
+  }
+
+  @include small-tablet {
+    padding-top: 100px;
+  }
+
+  @include mobile {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
   &__title {
     padding-top: 39px;
     padding-bottom: 25px;
+
   }
 
   &__bottom {
@@ -39,6 +53,11 @@
     justify-content: space-between;
     align-items: center;
 
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+    }
   }
 
   &__social-list {

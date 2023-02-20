@@ -93,6 +93,8 @@
   }
 
   &__caption {
+
+
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -101,6 +103,14 @@
     &--current {
       font-size: 16px;
       line-height: 160%;
+
+      @include mobile {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+      }
     }
 
 
@@ -140,8 +150,6 @@
     position: relative;
     padding-right: 13px;
 
-
-
     &::after {
       content: '';
       position: absolute;
@@ -159,14 +167,9 @@
     &--current {
       padding-left: 27px;
 
-      @include tablet {
-        padding-left: 10px;
-      }
 
-      @include small-tablet {
-        padding: 0;
 
-      }
+
 
       &::after {
         height: 15px;
@@ -183,6 +186,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
 
       }
     }

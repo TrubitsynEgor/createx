@@ -2,11 +2,16 @@
 
   &__title {
     padding-bottom: 23px;
+
+    @include mobile {
+      padding-bottom: 0px;
+    }
   }
 
   &__form {
     display: flex;
     flex-wrap: wrap;
+
 
   }
 
@@ -35,6 +40,10 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--grey-color);
+
+    @include mobile {
+      width: 250px;
+    }
 
     &::placeholder {
       font-size: 16px;

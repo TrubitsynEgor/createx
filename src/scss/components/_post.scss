@@ -1,6 +1,18 @@
 .post {
   padding-bottom: 181px;
 
+  @include tablet {
+    padding-bottom: 121px;
+  }
+
+  @include small-tablet {
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-bottom: 40px;
+  }
+
   &__wrapper {
     max-width: 840px;
     padding: 0 15px;
@@ -21,6 +33,16 @@
   &__content {
     padding-top: 80px;
     padding-bottom: 80px;
+
+    @include tablet {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @include mobile {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
 
   &__content-subtitle {
@@ -30,6 +52,10 @@
   &__content-descr {
     margin: 0;
     padding-bottom: 49px;
+
+    @include mobile {
+      padding-bottom: 25px;
+    }
 
     & p {
       margin: 0;
@@ -45,6 +71,11 @@
     position: relative;
     padding-bottom: 49px;
 
+    @include mobile {
+      padding-left: 30px;
+      padding-bottom: 30px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -57,6 +88,9 @@
       background-repeat: no-repeat;
       background-size: cover;
 
+      @include mobile {
+        left: -10px;
+      }
     }
   }
 

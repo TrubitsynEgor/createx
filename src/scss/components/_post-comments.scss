@@ -1,8 +1,28 @@
 .comments {
   padding-bottom: 115px;
 
+  @include tablet {
+    padding-bottom: 80px;
+  }
+
+  @include small-tablet {
+    padding-bottom: 60px;
+  }
+
+  @include mobile {
+    padding-bottom: 30px;
+  }
+
   &__title {
     padding-bottom: 34px;
+
+    @include small-tablet {
+      padding-bottom: 30px;
+    }
+
+    @include mobile {
+      padding-bottom: 0px;
+    }
   }
 
   &__list {}
@@ -10,16 +30,14 @@
   &__item {
     &:not(:last-child) {
       margin-bottom: 54px;
+
+      @include small-tablet {
+        margin-bottom: 40px;
+      }
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
     }
   }
 }
-
-.title {}
-
-.title--center {}
-
-.list-reset {}
-
-
-
-.btn-reset {}
