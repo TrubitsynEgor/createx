@@ -14,6 +14,16 @@
   &__content-item {
     grid-column: 3 span;
 
+    @include tablet {
+      grid-column: 6 span;
+    }
+
+    @include mobile {
+      grid-column: 12 span;
+      justify-content: center;
+      padding-right: 20px;
+    }
+
     &:hover {
       .scheme__content-num {
         color: var(--primary-color);
@@ -30,6 +40,22 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include tablet {
+          left: -7%;
+        }
+
+        @include small-tablet {
+          left: -9%;
+        }
+
+        @include mobile {
+          left: -7%;
+        }
+
+        @media screen and (max-width:425px) {
+          left: -9%;
+        }
 
       }
     }
@@ -50,12 +76,21 @@
       top: 36.5%;
       width: 209px;
       border: 1px dashed #D7DADD;
+
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
     }
   }
 
   &__content-title {
     margin: 0;
     padding-bottom: 10px;
+  }
+
+  &__content-descr {
+    margin-bottom: 30px;
+
   }
 
 }

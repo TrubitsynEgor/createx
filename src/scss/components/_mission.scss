@@ -69,5 +69,9 @@
     top: 46px;
     transform: translateX(-50%);
     padding: 16px 112px;
+
+    @include small-tablet {
+      padding: 16px 33px;
+    }
   }
 }

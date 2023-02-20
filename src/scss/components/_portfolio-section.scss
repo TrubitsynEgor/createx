@@ -9,6 +9,16 @@
   &--inner {
     padding-top: 180px;
     padding-bottom: 102px;
+
+    @include small-tablet {
+      padding-top: 120px;
+      padding-bottom: 50px;
+    }
+
+    @include mobile {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
   }
 
   &--work {
